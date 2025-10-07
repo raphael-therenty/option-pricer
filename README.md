@@ -1,17 +1,5 @@
 # Option Pricing — Overview & Comparison
 
-Vanilla option pricing library and interactive demo. This project implements multiple numerical and analytical methods for European vanilla options and provides tools to compare their accuracy and performance.
-
-Key methods included:
-
-- Black-Scholes-Merton (closed-form) with analytical Greeks
-- Cox-Ross-Rubinstein (CRR) Binomial tree (European)
-- Finite Difference (Crank–Nicolson) PDE solver (European)
-- Monte Carlo simulation with antithetic variates and control variate
-- Small Streamlit app to interactively compare methods and visualize P&L and Greeks
-
-This README keeps your original content while expanding installation, usage, development, and testing sections so contributors can get started quickly.
-
 ## Table of contents
 
 - Features
@@ -174,5 +162,6 @@ If you modify numerical routines, add unit tests covering edge cases (deep ITM/O
 - Binomial tree uses CRR branching and is intended for European payoffs
 - Finite difference solver implements Crank–Nicolson for numerical stability; boundary conditions are simple Dirichlet/Neumann approximations depending on payoff
 - Monte Carlo supports basic variance reduction (antithetic, control variate) but is not optimized for large-scale parallel runs
+
 
 
