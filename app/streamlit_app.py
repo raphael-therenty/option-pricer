@@ -25,8 +25,8 @@ from src.option_pricing import (
 )
 from src.option_pricing.viz import pnl_from_pricing_method
 
-st.set_page_config(page_title="Option Pricing Tool", layout="wide")
-st.title("Option Pricing: Overview & Comparison")
+st.set_page_config(page_title="European Option Pricer", layout="wide")
+st.title("European Option Pricing: Overview & Comparison")
 st.write("Created by Raphael Therenty")
 
 # ------------------------
