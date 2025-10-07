@@ -1,4 +1,4 @@
-# Option Pricing — Overview & Comparison
+# European Option Pricing — Overview & Comparison
 
 ## Table of contents
 
@@ -19,7 +19,7 @@
 - Streamlit interactive app to compare pricing methods and visualize results
 - Unit tests with `pytest`
 
-## How each model works (simple explanation)
+## How each model works?
 
 Below are brief, plain-language descriptions of each pricing method included in this project, with an intuitive explanation of how they work and their main trade-offs.
 
@@ -80,9 +80,6 @@ Create the folder structure above.
 ```
 
 
-Recommended: create a virtual environment.
-
-
 2) Run unit tests:
 
 ```powershell
@@ -123,11 +120,11 @@ option-pricer/
 ├─ .gitignore
 ├─ README.md
 ├─ requirements.txt
-├─ main.py                 # optional quick demo runner
+├─ main.py                 
 ├─ app/
-│  └─ streamlit_app.py    # Streamlit UI
+│  └─ streamlit_app.py
 ├─ cli/
-│  └─ run.py              # CLI for batch pricing/comparisons
+│  └─ run.py              
 ├─ src/
 │  └─ option_pricing/
 │     ├─ __init__.py
@@ -152,9 +149,7 @@ Files in `src/option_pricing` provide the computational core. `app/streamlit_app
 
 - Run all tests: `pytest`
 - Run a single test file: `pytest tests/test_bs.py -q`
-- Linting: add `flake8`/`ruff` config if desired (not included by default)
 
-If you modify numerical routines, add unit tests covering edge cases (deep ITM/OTM options, zero volatility, zero time to expiry, and negative or boundary interest rates) and numeric stability checks for large numbers of steps/simulations.
 
 ## Notes, assumptions and limitations
 
@@ -162,6 +157,7 @@ If you modify numerical routines, add unit tests covering edge cases (deep ITM/O
 - Binomial tree uses CRR branching and is intended for European payoffs
 - Finite difference solver implements Crank–Nicolson for numerical stability; boundary conditions are simple Dirichlet/Neumann approximations depending on payoff
 - Monte Carlo supports basic variance reduction (antithetic, control variate) but is not optimized for large-scale parallel runs
+
 
 
 
