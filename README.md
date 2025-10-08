@@ -1,5 +1,7 @@
 # European Option Pricing — Overview & Comparison
 
+[Open the Streamlit App](https://raphael-therenty-european-option-pricer.streamlit.app)
+
 ## Table of contents
 
 - Features
@@ -157,6 +159,7 @@ Files in `src/option_pricing` provide the computational core. `app/streamlit_app
 - Binomial tree uses CRR branching and is intended for European payoffs
 - Finite difference solver implements Crank–Nicolson for numerical stability; boundary conditions are simple Dirichlet/Neumann approximations depending on payoff
 - Monte Carlo supports basic variance reduction (antithetic, control variate) but is not optimized for large-scale parallel runs
+
 
 
 
